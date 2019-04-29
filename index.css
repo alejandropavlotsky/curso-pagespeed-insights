@@ -1,0 +1,494 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./fonts/icomoon.eot?ty4s1e');
+  src:  url('./fonts/icomoon.eot?ty4s1e#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?ty4s1e') format('truetype'),
+    url('./fonts/icomoon.woff?ty4s1e') format('woff'),
+    url('./fonts/icomoon.svg?ty4s1e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans';
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  letter-spacing: -.2px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  background-color: #1b2127;
+  background-position-x: right;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-course, .project-url, project-date {
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  width: 50%;
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-imageContainer img{
+  max-width: 100%;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header a {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: inherit;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.event-list-title {
+  margin-left: 20px;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event {
+  background: #f4fbff;
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event img {
+  height: 200px;
+  width: 480px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url(./img/twitter.svg);
+}
+
+.social-link.facebook {
+  background-image: url(./img/facebook.svg);
+}
+
+.social-link.instagram {
+  background-image: url(./img/instagram.svg);
+}
+
+.social-link.github {
+  background-image: url(./img/github.svg);
+}
+
+.form-email input {
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url(./img/envelope.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.html-video{
+  height: auto;
+  width: 100%;
+}
+
+.vimeo-video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flexible-video{
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: blue;
+  position: relative;
+}
+
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 1023px ) {
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+  }
+  .portfolio{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px ) {
+    .burguer-button{
+      display: block;
+      z-index: 4;
+    }
+    .header{
+      display: block;
+      height: auto;
+    }
+    .header ol{
+      display: initial;
+    }
+    .header ol li{
+      height: 50px;
+    }
+    .header a{
+      justify-content: center;
+      height: 40px;
+      font-size: 2em;
+      margin-bottom: .5em;
+    }
+    .header .logo{
+      text-align: center;
+    }
+    .menu{
+      position: fixed;
+      background-color: rgba(5, 111, 255, .9);
+      z-index: 3;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      /* height: 100vh; */
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .5s all;
+    }
+    .menu.is-active{
+      left: 0;
+    }
+    .project{
+      display: block;
+    }
+    .project-imageContainer{
+      width: auto;
+      text-align: center;
+    }
+    .project-details{
+      width: auto;
+      font-size: 16px;
+    }
+    .project-course, .project-date, .project-url{
+      margin: .3em 0;
+    }
+    .project-title{
+      font-size: 1.5em;
+      margin-bottom: .3em;
+    }
+    .project-url{
+      font-size: 1em;
+    }
+    .project-course{
+      font-size: .7em;
+    }
+    .project-date{
+      font-size: 1em;
+    }
+    .project-description{
+      font-size: .8em;
+    }
+
+    .event{
+      width: auto;
+      flex-shrink: initial;
+    }
+    .event img{
+      width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px ) {
+  .project-details{
+    font-size: 12px;
+  }
+  .event-detail{
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+  .contact{
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .social{
+    width: auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 320px ) {
+    h1{
+      font-size: 1em;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero{
+      padding: 2em 1em;
+    }
+}
