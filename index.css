@@ -12,7 +12,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -64,6 +63,56 @@ h2 {
   margin-bottom: 40px;
 }
 
+
+/* Section Header */
+
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 70px;
+  align-items: center;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header a {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: inherit;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+/* Section Header */
+
+/* Section Hero */
+
 .hero {
   background-color: #1b2127;
   background-position-x: right;
@@ -77,7 +126,15 @@ h2 {
 
 .hero-image {
   object-fit: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
 }
+
+/* Section Hero */
+
+/* Section Portfolio */
 
 .portfolio {
   background: #fafafa;
@@ -121,49 +178,9 @@ h2 {
 .project-imageContainer img{
   max-width: 100%;
 }
+/* Section Portfolio */
 
-.header {
-  background-color: #1b2127;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 70px;
-  align-items: center;
-}
-
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-figure {
-  margin: 0;
-}
-
-.header a {
-  align-items: center;
-  color: white;
-  display: flex;
-  height: inherit;
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-.menu {
-  height: inherit;
-}
-
-.header ol {
-  display: flex;
-  height: inherit;
-}
-
-.header ol li {
-  height: inherit;
-}
+/* Section Footer */
 
 .footer {
   background-color: #1b2127;
@@ -182,6 +199,9 @@ figure {
   color: white;
   text-decoration: none;
 }
+
+/* Section Footer */
+
 
 .event-list-title {
   margin-left: 20px;
@@ -240,6 +260,7 @@ figure {
 .contact {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 16px;
 }
 
 .social {
@@ -291,6 +312,8 @@ figure {
   width: 100px;
   border-radius: 5px;
   margin-top: 10px;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .container {
